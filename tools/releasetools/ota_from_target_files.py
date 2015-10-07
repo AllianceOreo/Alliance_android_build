@@ -467,6 +467,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("*       2017       *")
   script.Print("********************")
 
+  script.AppendExtra("ifelse(is_mounted(\"/system\"), unmount(\"/system\"));")
   device_specific.FullOTA_InstallBegin()
 
   system_progress = 0.75
