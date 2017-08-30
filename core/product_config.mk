@@ -189,7 +189,7 @@ else
       $(SRC_TARGET_DIR)/product/AndroidProducts.mk)
   else
     ifneq ($(CUSTOM_BUILD),)
-    all_product_configs := $(shell ls vendor/alliance/products/$(CUSTOM_BUILD).mk)
+    all_product_configs := $(shell ls vendor/pure/products/$(CUSTOM_BUILD).mk)
   else
     # Read in all of the product definitions specified by the AndroidProducts.mk
     # files in the tree.
